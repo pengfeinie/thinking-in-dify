@@ -1,12 +1,8 @@
+# Dify部署方式
 
+## 1. 本地部署
 
-
-
-
-
-
-
-### Clone Dify
+### 1.1 Clone Dify
 
 Clone the Dify source code to your local machine:
 
@@ -15,7 +11,9 @@ Clone the Dify source code to your local machine:
 git clone https://github.com/langgenius/dify.git -b 1.1.2 --depth 1
 ```
 
-### Starting Dify
+![](images/2025-03-24_180149.png)
+
+### 1.2 Starting Dify
 
 Navigate to the Docker directory in the Dify source code
 
@@ -31,20 +29,10 @@ cp .env.example .env
 
 Start the Docker containers
 
-Choose the appropriate command to start the containers based on the Docker Compose version on your system. You can use the `$ docker compose version` command to check the version, and refer to the [Docker documentation](https://docs.docker.com/compose/install/) for more information:
-
-- If you have Docker Compose V2, use the following command:
-
-Copy
+Choose the appropriate command to start the containers based on the Docker Compose version on your system. 
 
 ```
 docker compose up -d
 ```
 
-- If you have Docker Compose V1, use the following command:
-
-Copy
-
-```
-docker-compose up -d
-```
+![](images/2025-03-24_180415.png)
